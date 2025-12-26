@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace Project4
 {
 public class Pagamento : IPagamento
+
 				{
 					public string id {get; set; } // antes era string User 
 					public int CPF { get; set;}
