@@ -9,7 +9,7 @@ namespace Project4
 public class Pagamento : IPagamento
 
 				{
-					public string id {get; set; } // antes era string User 
+					public string Nome {get; set; } // antes era string User 
 					public int CPF { get; set;}
 					public DateTime Vencimento {get; set;}
                    
@@ -19,10 +19,10 @@ public class Pagamento : IPagamento
 
 					 public Pagamento() =>this.Vencimento = DateTime.Now.AddDays(60);
 					 
- 
+
 						public void Pagar (decimal valor)
 						{ 
-							Console.WriteLine ($"id: {this.id} \n Valor: {Valor:N2} \n **Dinheiro** \n Vencimento da fatura: {Vencimento:dd/MM/yyyy}");
+							Console.WriteLine ($"Nome: {this.Nome} \n Valor: {Valor:N2} \n **Dinheiro** \n Vencimento da fatura: {Vencimento:dd/MM/yyyy}");
  
 						}
 

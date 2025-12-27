@@ -4,7 +4,7 @@ namespace Project4
 public interface IPagamento
  
 		{
-			string id {get; set; }
+			string Nome {get; set; }
 			int CPF { get; set;}
 
             DateTime EmissaoHolerite { get; set;}

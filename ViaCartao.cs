@@ -3,7 +3,7 @@
  
  public class PagamentoViaCartao : IPagamento 
 				{
-					public string id {get; set; }
+					public string Nome {get; set; }
 					public int CPF { get; set;}
 					public DateTime Vencimento {get; set;}
 					public DateTime EmissaoHolerite { get; set; }
@@ -16,7 +16,7 @@
 					}
 					public void Pagar(decimal valor)
 						{
-							Console.WriteLine ($"id: {this.id}, Valor: {Valor:N2} \n  **Cartão de Crádito**, \nVencimento da fatura: {Vencimento:dd/MM/yyyy}");
+							Console.WriteLine ($"Nome: {this.Nome}, Valor: {Valor:N2} \n  **Cartão de Crádito**, \nVencimento da fatura: {Vencimento:dd/MM/yyyy}");
 						}
 
 

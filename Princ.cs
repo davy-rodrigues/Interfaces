@@ -1,6 +1,3 @@
-
-using System;
-
 namespace Project4
 {
 public class Program
@@ -17,16 +14,16 @@ public class Program
  
 							 imprimir (" Efetue o Pagamento em dinheiro");
  
-							 var pagamento = new Pagamento {id = "Naiane", Valor = 99.00m,};
+							 var pagamento = new Pagamento {Nome = "Naiane", Valor = 99.00m,};
  
-							 imprimir($"\n Iniciando Pagamento {pagamento.id}");
+							 imprimir($"\n Iniciando Pagamento {pagamento.Nome}");
  
 								pagamento.Pagar(pagamento.Valor);
  
  
-							 var pagamentoViaCc = new PagamentoViaCartao {id = "João Silva",Valor = 150.75m,NumeroCartao = "1234434/35/5678" };
+							 var pagamentoViaCc = new PagamentoViaCartao {Nome = "João Silva",Valor = 150.75m,NumeroCartao = "1234434/35/5678" };
  
-								imprimir($"\n Iniciando pagamento via Cartão para {pagamentoViaCc.id}");
+								imprimir($"\n Iniciando pagamento via Cartão para {pagamentoViaCc.Nome}");
  
 								pagamentoViaCc.Pagar(pagamentoViaCc.Valor);
  
