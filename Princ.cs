@@ -14,14 +14,14 @@ public class Program
  
 							 imprimir (" Efetue o Pagamento em dinheiro");
  
-							 var pagamento = new Pagamento {Nome = "Naiane", Valor = 99.00m,};
+							 var pagamento = new Pagamento {Nome = "Naiane da Silva dos Santos", Valor = 99.00m,};
  
 							 imprimir($"\n Iniciando Pagamento {pagamento.Nome}");
  
 								pagamento.Pagar(pagamento.Valor);
  
  
-							 var pagamentoViaCc = new PagamentoViaCartao {Nome = "João Silva",Valor = 150.75m,NumeroCartao = "1234434/35/5678" };
+							 var pagamentoViaCc = new PagamentoViaCartao {Nome = "João Silva Richard ",Valor = 150.75m,NumeroCartao = "1234434/35/5678" };
  
 								imprimir($"\n Iniciando pagamento via Cartão para {pagamentoViaCc.Nome}");
  
